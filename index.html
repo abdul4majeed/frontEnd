@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-img"></div>
+    <div class="form-holder">
+        <div class="inner-form">
+          <div class="header">
+            Login Form
+          </div>
+          <div class="body">
+            <form>
+              <span class="error hide">
+                Error Show Here
+              </span>
+              <div class="form-group">
+                <input class="form-control animation" id="cake"/>
+              </div>
+              <div class="form-group">
+                <input class="form-control animation"/>
+              </div>
+              <div class="form-group">
+                <button class="btn animation" id="login" type="button">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="spinner-holder hide" id="spinner">
+          <div class="spinner">
+              <img src="Spinner-1s-200px.gif" alt="Spinner" >
+          </div>
+      </div>
+      <section class="video-holder" id="video">
+        <div class="m-5">
+            <p class="video-header">Please Take a SnapShot of your face to continue</p>
+        </div>
+        <div>
+          <video autoplay controls id="video"></video>
+        </div>
+        <div class="m-5">
+          <button class="btn">Take a SnapShot</button>
+        </div>
+      </section>
+      <script>
+          document.getElementById('video').style.display = "none";
+
+          document.getElementById('login').onclick =  function()
+          {
+            setTimeout(() => {
+                  document.getElementById('spinner').classList.remove('hide');
+              }, 100);
+
+              setTimeout(() => {
+                  document.getElementById('spinner').classList.add('hide');
+              }, 1000);
+
+              setTimeout(() => {
+                document.getElementById('video').style.display = "";
+              }, 2000);
+
+
+          };
+      </script>
+</body>
+</html>
