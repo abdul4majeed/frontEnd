@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+
+
+.nav-holder
+{
+    background: #ffffff;
+    border:1px solid black;
+}
+.nav-content
+{
+    margin: 5px;
+    padding: 15px;
+}
+
+.nav-content div
+{
+    display: inline-block;
+}
+
+.left-side
+{
+    float:left;
+}
+
+.right-side
+{
+    float:right;
+    background-image: url('../pexels-photo-1447366.jpeg');
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: -15px 0 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.side-nav-holder
+{
+    background-color: #f2f2f2;
+    position: absolute;
+    top:10%;
+    left:85%;
+    right:0;
+    bottom:0;
+    color:#3f3f3f;
+    opacity: 0.5;
+    width:150px;
+    height:100px;
+}
+
+.right-side:hover
+{
+   cursor: pointer;
+}
+
+.hide
+{
+    display:none !important;
+}
+
+.row, .search, .label , .drop-down , .field-holder{
+    display: inline-block;
+}
+
+
+.row
+{
+    float: left;
+}
+
+.search
+{
+    float:right;
+}
+
+.clearfix
+{
+    content: " ";
+    display: block;
+    clear:both;
+}
+
+.table-holder
+{
+    overflow-x: auto;
+}
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+
+th,td{
+    text-align: left;
+    padding: 8px;
+}
+
+td img
+{
+    width : 20px;
+    height : 20px;
+}
+
+.delete-holder , .information-holder , .add-data-holder
+{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: #3f3f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+}
+
+input[type="button"] {
+    transition: all .3s;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: right;
+}
+
+input[type="button"]:not(.active) {
+    background-color:transparent;
+}
+
+.active {
+    background-color: #ff4d4d;
+    color :#fff;
+}
+
+input[type="button"]:hover:not(.active) {
+    background-color: #ddd;
+}
+.pag-btn
+{
+    text-align: right;
+    border: 1px solid green;
+    float:right;
+}
+.pag-info
+{
+    border: 1px solid red;
+    float:left;
+}
+
+#logo-img
+{
+    width: 75px;
+    margin-top:-6px;
+}
+
+.info > .left
+{
+    float:left;
+}
+
+.info > .right
+{
+    float:right;
+    cursor: pointer;
+}
+
+.input-control 
+{
+    vertical-align: top;
+}
+
+.add-row img
+{
+    width: 20px;
+    height: 20px;
+}

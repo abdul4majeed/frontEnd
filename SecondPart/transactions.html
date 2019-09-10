@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-holder">
+        <div class="nav-content">
+            <div class="left-side">
+                    <div class="logo"><img src="programmers-force-preloader.png" alt="Programmer Force Logo" id="logo-img" /></div>
+            </div>
+            <div class="right-side">
+                <div class="side-nav-holder hide">
+                    <ul>
+                        <li>C</li>
+                        <li>C</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="search-holder">
+        <div class="row">
+            <div class="label">
+                Per Page
+            </div>
+            <div class="drop-down">
+                <select name="" id="">
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="10" >10</option>
+                    <option value="25" selected>25</option>
+                    <option value="50">50</option>
+                    <option value="75">75</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="search">
+            
+            <div class="field-holder">
+                <input type="text" name="" id="" class="input-control" placeholder="Search Query">
+                <span class="add-row">
+                        <img src="https://img.icons8.com/color/48/000000/add.png" alt="add new record" id="add-new-row">
+                </span>
+            </div>
+           
+        </div>
+    <div class="clearfix"></div>
+        
+    </div>
+    <div class="table-holder">
+        <table id="myTable">
+            <tr>
+                <th onclick="sortTable(0)">Head</th>
+                <th onclick="sortTable(1)">Head</th>
+                <th> Action </th>
+            </tr>
+            <tr>
+                    <td>1</td>
+                    <td>1</td>
+                            <td><img src="https://img.icons8.com/cotton/64/000000/view-file.png" class="detail-btn">
+                                <img src="https://img.icons8.com/cute-clipart/64/000000/delete-forever.png" class="delete-btn"></td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                            <td><img src="https://img.icons8.com/cotton/64/000000/view-file.png" class="detail-btn">
+                                <img src="https://img.icons8.com/cute-clipart/64/000000/delete-forever.png" class="delete-btn"></td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3</td>
+                            <td><img src="https://img.icons8.com/cotton/64/000000/view-file.png" class="detail-btn">
+                                <img src="https://img.icons8.com/cute-clipart/64/000000/delete-forever.png" class="delete-btn"></td>
+
+                </tr>
+                <tr>
+                        <td>4</td>
+                        <td>4</td>
+                            <td><img src="https://img.icons8.com/cotton/64/000000/view-file.png" class="detail-btn">
+                                <img src="https://img.icons8.com/cute-clipart/64/000000/delete-forever.png" class="delete-btn"></td>
+
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>5</td>
+                            <td><img src="https://img.icons8.com/cotton/64/000000/view-file.png" class="detail-btn">
+                                <img src="https://img.icons8.com/cute-clipart/64/000000/delete-forever.png" class="delete-btn"></td>
+
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>6</td>
+                            <td><img src="https://img.icons8.com/cotton/64/000000/view-file.png" class="detail-btn">
+                                <img src="https://img.icons8.com/cute-clipart/64/000000/delete-forever.png" class="delete-btn"></td>
+
+                    </tr>
+                    <tr>
+                            <td>7</td>
+                            <td>7</td>
+                            <td><img src="https://img.icons8.com/cotton/64/000000/view-file.png" class="detail-btn">
+                                <img src="https://img.icons8.com/cute-clipart/64/000000/delete-forever.png" class="delete-btn"></td>
+
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>8</td>
+                            <td><img src="https://img.icons8.com/cotton/64/000000/view-file.png" class="detail-btn">
+                                <img src="https://img.icons8.com/cute-clipart/64/000000/delete-forever.png" class="delete-btn"></td>
+
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>9</td>
+                            <td><img src="https://img.icons8.com/cotton/64/000000/view-file.png" class="detail-btn">
+                                <img src="https://img.icons8.com/cute-clipart/64/000000/delete-forever.png" class="delete-btn"></td>
+
+                        </tr>
+                        <tr>
+                                <td>10</td>
+                                <td>10</td>
+                            <td><img src="https://img.icons8.com/cotton/64/000000/view-file.png" class="detail-btn">
+                                <img src="https://img.icons8.com/cute-clipart/64/000000/delete-forever.png" class="delete-btn"></td>
+
+                            </tr>
+                       
+                            
+        </table>
+        <div id="buttons"></div>
+    </div>
+
+    <div class="delete-holder hide">
+        <div class="ques">
+            Do you really want to delete this row?
+        </div>
+        <div class="ques-ans">
+            <button type="button" class="btn yes-btn">Yes</button>
+            <button type="button" class="btn no-btn">NO</button>
+        </div>
+    </div>
+
+    <div class="information-holder hide">
+        <div class="data">
+            <div class="header">
+                <div class="info"><span class="left">Detail</span><span class="right">x</span></div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="body">
+                    Show Form Info Here
+            </div>
+        </div>
+    </div>
+
+    <div class="add-data-holder hide">
+            <div class="data">
+                <div class="header">
+                    <div class="info"><span class="left">Detail</span><span class="right">x</span></div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="body">
+                        Show Form Info Here
+                </div>
+            </div>
+    </div>
+
+    <script>
+        // table Pagination Code Started
+        let table = document.getElementById("myTable");         //Get The Table  
+        let rowLength = table.rows.length;                      //Find The Length of The Table Rows.
+        let firstRow = table.rows[0].firstElementChild.tagName; // Get the first row tags to check it is th or not.
+        let hasHead = (firstRow === "TH");                      // Compare here to check if the tag is th or not because we include the th into final result.
+        let is_head_included = (hasHead)?1:0;                   
+        let th = (is_head_included?table.rows[(0)].outerHTML:"");
+        rowLength -= is_head_included;
+        let tr = [];
+
+for (let i = is_head_included , ii = 0; i < (rowLength+is_head_included); i++, ii++) {
+	tr[ii] = table.rows[(i)].outerHTML;
+}
+
+
+setNum(document.getElementsByTagName('select')[0].value);
+
+function setNum(n_other) {
+    let initial_value = document.getElementsByTagName('select')[0].children[0].value;
+    let last_value = document.getElementsByTagName('select')[0].children[document.getElementsByTagName('select')[0].childElementCount-1].value;
+    let n; 
+	if (n_other>=Number(initial_value) && n_other<=Number(last_value)) {
+		n = n_other;
+		let pageCount = Math.ceil(rowLength / n);
+		sort(1,n,pageCount);
+	} else {
+		//alert("This number must be between '6' & '15'");
+	}
+}
+
+function sort(p,nn,pageCount_param) {
+	let	rows = th,s = ((nn * p)-nn);
+		for (i = s;(i < (s+nn)) && (i < tr.length); i++)
+			rows += tr[i];
+
+        table.innerHTML = rows;
+		document.getElementById("buttons").innerHTML = pageButtons(pageCount_param,p,nn,tr,rowLength);
+		
+		//CSS Stuff
+        document.getElementById("id"+p).setAttribute("class","active");
+}
+
+function pageButtons(pCount,cur,nn,row_param,rowLeng_param) {
+    let total = cur * nn;
+    if(Number(rowLeng_param) < total)
+    {
+        total = rowLeng_param;
+    }
+   
+    let initial_number = cur * nn - nn + 1;
+    let information = `<p class=\"pag-info\">Showing ${initial_number} to ${total} of ${rowLeng_param} entries</p>`; 
+	if (pCount >= 1 ) {
+	var	prevDis = (cur == 1)?"disabled":"",
+		nextDis = (cur == pCount)?"disabled":"",
+		buttons = information + "<div class=\"pag-btn\"><input type='button' value='&lt;' onclick='sort("+(cur - 1)+","+nn+","+pCount+")' "+prevDis+">";
+	for (i=1; i<=pCount;i++)
+		buttons += "<input type='button' id='id"+i+"'value='"+i+"' onclick='sort("+i+","+nn+","+pCount+")'>";
+	buttons += "<input type='button' value='&gt;' onclick='sort("+(cur + 1)+","+nn+","+pCount+")' "+nextDis+"></div><div class=\"clearfix\"></div>";
+	return buttons;
+	} else {return "";}
+}
+
+
+    document.getElementsByTagName('select')[0].onchange = function()
+    {
+        setNum(document.getElementsByTagName('select')[0].value);
+    }
+
+        // table Pagination Code Ended
+
+
+        // Table Sort Code Started
+   
+    function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+        // Table Sort Code Ended
+
+        // Table Search Code Started
+
+
+// (Array.prototype.slice.call(
+//     document.getElementsByTagName('table')[0].rows).map(
+//         (e)=>(Array.prototype.slice.call(e.children).filter(
+
+//             (e)=>{
+//                 if(e.innerHTML != 5 && e.innerHTML != 8)
+//                 {
+//                     e.style.display = "none";
+//                 }
+//             }
+//             ))));
+
+     // Table Search Code Ended
+
+     //Side  Bar Menu Hide and Show Code Started
+document.getElementsByClassName('right-side')[0].onclick =function(){
+    document.getElementsByClassName('side-nav-holder')[0].classList.remove('hide');
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.right-side')) {
+    var dropdowns = document.getElementsByClassName("side-nav-holder");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('side-nav-holder')) {
+        openDropdown.classList.add('hide');
+      }
+    }
+  }
+}
+
+     //Side  Bar Menu Hide and Show Code Ended
+
+     //Show Delete Question Yes Or No Started
+     
+        Array.prototype.slice.call(document.getElementsByClassName('delete-btn')).map((e)=>{
+         e.onclick = function(ev)
+         {
+            console.log(ev.path[2].cells[0].innerHTML);
+             document.getElementsByClassName('delete-holder')[0].classList.remove('hide');
+
+         }
+     });
+
+
+     document.getElementsByClassName('no-btn')[0].onclick = function(e)
+     {
+        e.path[2].classList.add('hide');
+     }
+
+     document.getElementsByClassName('yes-btn')[0].onclick = function(e)
+     {
+       console.log('delete the row here and update the table and localstorage');
+       e.path[2].classList.add('hide');
+     }
+     
+     //Show Delete Question Yes Or No Ended
+
+    //Show the Information Detail Started
+    Array.prototype.slice.call(document.getElementsByClassName('detail-btn')).map((e)=>{
+         e.onclick = function(ev)
+         {
+            console.log(ev.path[2].cells[0].innerHTML);
+             document.getElementsByClassName('information-holder')[0].classList.remove('hide');
+         }
+     });
+
+    document.getElementsByClassName('right')[0].onclick = function()
+    {
+        document.getElementsByClassName('information-holder')[0].classList.add('hide');
+    }
+    //Code for information panel Ended
+
+    //Add New Row Code Started
+
+    document.getElementById('add-new-row').onclick = function()
+    {
+        document.getElementsByClassName('add-data-holder')[0].classList.remove('hide');
+    }
+
+    document.getElementsByClassName('right')[1].onclick = function()
+    {
+        document.getElementsByClassName('add-data-holder')[0].classList.add('hide');
+    }
+    //Add New Row Code Ended
+    </script>
+
+
+</body>
+</html>

@@ -90,14 +90,14 @@ input[type="text"]{
 }
 .inputnum:hover .alert {
 	visibility: visible;
-{
+}
     </style>
 </head>
 <body>
     
         <div id='buttons'></div>
         <div class='inputnum'><input type='text' onkeyup='(!(isNaN(this.value) || this.value == \"\")?setNum(this.value):\"\")' maxlength='2' value='5'/>
-          <select onchange='setNum(this.value)'><option default>5</option><option >10</option></select>
+          <select onchange='setNum(this.value)'><option default>5</option><option >10</option><option >15</option></select>
         <table id="myTable">
             <tr>
                 <th>Head col 1</th>
@@ -166,7 +166,6 @@ input[type="text"]{
         
         </table>
           
-          https://www.w3schools.com/howto/howto_js_sort_table.asp
 
     <script>
 /* 
@@ -196,8 +195,7 @@ input[type="text"]{
 **
 */
 
-var $table = document.getElementById("myTable"),
-$n, $pageCount, $rows,
+var $table = document.getElementById("myTable"),$n, $pageCount, $rows,
 $rowCount = $table.rows.length,
 $firstRow = $table.rows[0].firstElementChild.tagName,
 $hasHead = ($firstRow === "TH"),
@@ -238,7 +236,7 @@ function sort($p,nn) {
 }
 
 function pageButtons($pCount,$cur) {
-	if ($pCount > 1 ) {
+	if ($pCount >= 1 ) {
 	var	$prevDis = ($cur == 1)?"disabled":"",
 		$nextDis = ($cur == $pCount)?"disabled":"",
 		$buttons = "<input type='button' value='&lt;&lt;' onclick='sort("+($cur - 1)+","+$n+")' "+$prevDis+">";
